@@ -6,7 +6,11 @@ function isPrime(n)
         console.log('you have either enter zero or a negative number and number you enetred is :' ,n);
         return false;
     }
-    else if((n==1)||(n==2))
+    else if(n===1)
+    {
+        console.log('1 is not prime ');
+    }
+    else if(n===2)
     {
         return true;
     }

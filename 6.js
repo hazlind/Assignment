@@ -6,8 +6,12 @@ function Prime(n)
     {
         console.log('the number is either zero or negative number !! it is invalid');
     }
+    else if(n===1)
+    {
+        console.log('1 is not prime');
+    }
     else {
-        for (let i = 1; i <= n; i++)
+        for (let i = 2; i <= n; i++)
         {
 
             var notPrime = false;
@@ -32,9 +36,12 @@ function PrimeN(n) {
     if (n <= 0) {
         console.log('the number is either zero or negative number !! it is invalid');
     }
+    else if(n===1)
+    {
+        console.log('1 is not prime');
+    }
     else {
-
-     for(let i=1;p.length<n;i++) {
+        for(let i=2;p.length<n;i++) {
          var notPrime = false;
          for (let j = 2; j < i; j++) {
              if (i % j === 0 && j !== i) {
@@ -50,7 +57,7 @@ function PrimeN(n) {
 
     console.log(p + ' are prime numbers less than :'+n);
 }
-//PrimeN(20);
+PrimeN(20);
 
 
 //Prime numbers within range
