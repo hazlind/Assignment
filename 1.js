@@ -1,15 +1,22 @@
 function isEven(n)   //n is input
-{
-    if(n<=0 )
+{  var a;
+    (n<=0)?a=0:((n%2===0)?a=1:a=3);
+    switch(a)
     {
-        console.log('you have either enter zero or a negative number and number you enetred is :' ,n);
+        case 0:{
+            console.log('it is 0 or lesser than 0 , and the number u enter is: '+n);
+            break;
+        }
+        case 1:{
+            console.log('it is even ');
+            break;
+        }
+        case 2:{
+            conosle.log('it is odd');
+            break;
+        }
+        default:console.log('ERROR!!input is invald...');
     }
-    else if (n%2==0)
-    {
-        console.log('it is even',n);
-    }
-    else
-        console.log('not even',n);
 }
-// isEven(4);
+ isEven('a');
 
