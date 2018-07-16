@@ -11,3 +11,17 @@ function PowerOf2(n)
 }
 var ans=PowerOf2(3);
 console.log(ans);
+
+
+function PowerOfN(n,r)
+{
+    if(n===0)
+    {
+        return 1;
+    }
+else
+    {
+        return n*PowerOf2(r-1);
+    }
+}
+console.log(PowerOfN(2,3));
